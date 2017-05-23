@@ -1,0 +1,14 @@
+[package]
+name = "octh_helloworld"
+version = "0.1.0"
+authors = ["CameronTaggart"]
+build = "build.rs"
+
+[dependencies]
+octh = { path = "../octh" }
+
+[lib]
+crate-type = ["dylib"]
+
+[features]
+clang_3_9 = []

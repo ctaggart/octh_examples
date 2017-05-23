@@ -1,0 +1,6 @@
+[build]
+rustflags = [
+    "-C", "prefer-dynamic",
+    # "-C", "link-arg=-pthread",
+    "-Z", "pre-link-arg=-pthread",
+]

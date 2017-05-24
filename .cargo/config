@@ -1,6 +1,12 @@
 [build]
 rustflags = [
     "-C", "prefer-dynamic",
-    # "-C", "link-arg=-pthread",
-    "-Z", "pre-link-arg=-pthread",
+    # "-Z", "pre-link-arg=-pthread",
+    "-C", "link-arg=-pthread",
+    "-C", "link-arg=-fopenmp",
+    "-C", "link-arg=-LC:/Octave/Octave-4.2.1/lib64/gcc/x86_64-w64-mingw32/4.9.4",
+    # "-C", "link-arg=--sysroot=C:/Octave/Octave-4.2.1",
 ]
+
+[target.x86_64-pc-windows-gnu]
+linker = "C:/Octave/Octave-4.2.1/bin/gcc.exe"

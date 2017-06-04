@@ -1,12 +1,14 @@
 fn main () {
     println!("cargo:rustc-link-search={}", "C:\\Octave\\Octave-4.2.1\\lib\\octave\\4.2.1");
     println!("cargo:rustc-link-search={}", "C:\\Octave\\Octave-4.2.1\\lib");
+    // println!("cargo:rustc-link-search={}", "C:\\Octave\\OCTAVE~1.1\\lib");
     // println!("cargo:rustc-link-search={}", "C:\\Octave\\Octave-4.2.1\\lib\\gcc\\x86_64-w64-mingw32\\4.9.4")
     println!("cargo:rustc-link-search={}", "C:\\Octave\\Octave-4.2.1\\lib64\\gcc\\x86_64-w64-mingw32\\4.9.4");
     println!("cargo:rustc-link-lib={}", "octave");
     println!("cargo:rustc-link-lib={}", "octinterp");
     // println!("cargo:rustc-link-lib={}", "octhc");
     // println!("cargo:rustc-link-lib={}", "pthread");
+    // println!("cargo:rustc-link-lib=static={}", "pthread");
 
     println!("cargo:rustc-link-lib={}", "freetype");
     println!("cargo:rustc-link-lib={}", "hdf5");
@@ -18,7 +20,6 @@ fn main () {
     println!("cargo:rustc-link-lib={}", "opengl32");
     println!("cargo:rustc-link-lib={}", "glu32");
     println!("cargo:rustc-link-lib={}", "fontconfig");
-    println!("cargo:rustc-link-lib={}", "freetype");
     println!("cargo:rustc-link-lib={}", "gl2ps");
     println!("cargo:rustc-link-lib={}", "lapack");
     println!("cargo:rustc-link-lib={}", "curl");
@@ -41,4 +42,5 @@ fn main () {
     println!("cargo:rustc-link-lib={}", "moldname");
     println!("cargo:rustc-link-lib={}", "quadmath");
 
+    // println!("cargo:rustc-link-lib={}", "winpthread");
 }
